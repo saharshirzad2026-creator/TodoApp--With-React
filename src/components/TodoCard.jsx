@@ -4,6 +4,9 @@ export default function TodoCard({todo, setList, list}){
     function handleClick(id){
         setList((prev)=> prev.map((t)=> (t.id == id? {...t, completed: !t.completed}: t)));
     }
+    function handleDelete(id){
+        setList((prev)=> prev.filter( (t)=> t.id !== id ));
+    }
     return(
         <div className="relative">
         <div className="w-full border py-5 px-5 rounded-md">
@@ -14,7 +17,7 @@ export default function TodoCard({todo, setList, list}){
             <div className="w-full flex justify-between items-center mt-2">
             <p className="text-xl">{todo.date}</p>
             <div className="flex gap-2">
-            <button className="hover:cursor-pointer">
+            <button onClick={()=>handleDelete(todo.id)} className="hover:cursor-pointer">
                 <Trash size={28}/>
             </button>
             <button className="hover:cursor-pointer" onClick={()=> handleClick(todo.id)}>
