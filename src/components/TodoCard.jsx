@@ -1,13 +1,14 @@
 import { CheckCircle, Trash } from "lucide-react";
 
-export default function TodoCard({todo, setList}){
+export default function TodoCard({todo, setList, list}){
     function handleClick(id){
-        const doneTodo = todo.find((p)=> p.id == id).completed = true;
-        setList((prev)=>[...prev, doneTodo]);
+        setList((prev)=> prev.map((t)=> (t.id == id? {...t, completed: !t.completed}: t)));
     }
     return(
         <div className="w-full border py-5 px-5 rounded-md">
-            <h1 className="text-2xl font-bold bg-linear-60 from-violet-800 via-violet-500 to-violet-600 text-transparent bg-clip-text">{todo.todo}</h1>
+            <h1
+            className={todo.completed? "text-decore":""}
+            className="text-2xl font-bold bg-linear-60 from-violet-800 via-violet-500 to-violet-600 text-transparent bg-clip-text">{todo.todo}</h1>
             <div className="w-full flex justify-between items-center mt-2">
             <p className="text-xl">{todo.date}</p>
             <div className="flex gap-2">
