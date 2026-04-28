@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+.text-decore{
+    text-decoration: line-through;
+}
+
+#heading{
+    font-size: 30px;
+    font-weight: 900;
+    background-image: linear-gradient(60deg, rgb(114, 2, 114), rgb(172, 94, 172), rgb(148, 8, 148));
+    color: transparent;
+    background-clip: text;
+}
