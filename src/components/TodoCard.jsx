@@ -7,7 +7,7 @@ export default function TodoCard({todo, setList}){
     }
     return(
         <div className="w-full border py-5 px-5 rounded-md">
-            <h1 className="text-2xl font-bold bg-linear-60 from-violet-800 via-violet-500 to-violet-600">{todo.todo}</h1>
+            <h1 className="text-2xl font-bold bg-linear-60 from-violet-800 via-violet-500 to-violet-600 text-transparent bg-clip-text">{todo.todo}</h1>
             <div className="w-full flex justify-between items-center mt-2">
             <p className="text-xl">{todo.date}</p>
             <div className="flex gap-2">
