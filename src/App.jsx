@@ -8,7 +8,9 @@ export default function App(){
   const [list, setList] = useState([]);
   return (
     <>
-      
+      <Navbar showForm = {showForm} setShowForm = {setShowForm}/>
+            <CreateForm list = {list} setList = {setList} showForm = {showForm} setShowForm = {setShowForm}/>
+            <TodoList list = {list} setList = {setList}/>
     </>
   )
 }
