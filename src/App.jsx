@@ -2,15 +2,17 @@ import { useState } from "react";
 import CreateForm from "./components/form";
 import Navbar from "./components/nav";
 import TodoList from "./components/TodoList";
+import FirstReducer from "./components/FirstReducer";
 
 export default function App(){
   const [showForm, setShowForm] = useState(false);
   const [list, setList] = useState([]);
   return (
     <>
-      <Navbar showForm = {showForm} setShowForm = {setShowForm}/>
+      {/* <Navbar showForm = {showForm} setShowForm = {setShowForm}/>
             <CreateForm list = {list} setList = {setList} showForm = {showForm} setShowForm = {setShowForm}/>
-            <TodoList list = {list} setList = {setList}/>
+            <TodoList list = {list} setList = {setList}/> */}
+            <FirstReducer/>
     </>
   )
 }
