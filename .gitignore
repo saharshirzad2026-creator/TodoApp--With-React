@@ -8,6 +8,14 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+AddStudent.jsx
+AddTodo.jsx
+FifthReducer.jsx
+FourthReducer.jsx
+SecondReducer.jsx
+SecondTodo.jsx
+Student.jsx
+ThirdReducer.jsx
 dist
 dist-ssr
 *.local
