@@ -7,20 +7,24 @@ import SecondReducer from "./components/SecondReducer";
 import ThirdReducer from "./components/ThirdReducer";
 import FourthReducer from "./components/FourthReducer";
 import FifthReducer from "./components/FifthReducer";
+import FirstUseMemo from "./components/FirstUseMemo";
+import SecondUseMemo from "./components/SecondUseMemo";
 
 export default function App(){
   const [showForm, setShowForm] = useState(false);
   const [list, setList] = useState([]);
   return (
-    <div className="bg-stone-200 w-full min-h-screen">
+    <div className=" w-full min-h-screen">
       {/* <Navbar showForm = {showForm} setShowForm = {setShowForm}/>
             <CreateForm list = {list} setList = {setList} showForm = {showForm} setShowForm = {setShowForm}/>
             <TodoList list = {list} setList = {setList}/> */}
             {/* <FirstReducer/> */}
             {/* <SecondReducer/> */}
-            <ThirdReducer/>
-            <FourthReducer/>
+            {/* <ThirdReducer/> */}
+            {/* <FourthReducer/> */}
             {/* <FifthReducer/> */}
+            {/* <FirstUseMemo/> */}
+            <SecondUseMemo/>
     </div>
   )
 }
