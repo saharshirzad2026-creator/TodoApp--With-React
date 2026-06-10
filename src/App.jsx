@@ -9,6 +9,8 @@ import FourthReducer from "./components/FourthReducer";
 import FifthReducer from "./components/FifthReducer";
 import FirstUseMemo from "./components/FirstUseMemo";
 import SecondUseMemo from "./components/SecondUseMemo";
+import ThirdUseMemo from "./components/ThirdUseMemo";
+import FourthUseMemo from "./components/FourthUseMemo";
 
 export default function App(){
   const [showForm, setShowForm] = useState(false);
@@ -24,7 +26,9 @@ export default function App(){
             {/* <FourthReducer/> */}
             {/* <FifthReducer/> */}
             {/* <FirstUseMemo/> */}
-            <SecondUseMemo/>
+            {/* <SecondUseMemo/> */}
+            {/* <ThirdUseMemo/> */}
+            <FourthUseMemo/>
     </div>
   )
 }
