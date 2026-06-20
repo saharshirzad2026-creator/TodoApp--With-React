@@ -1,5 +1,4 @@
 import React, { useDeferredValue, useEffect, useState, useTransition } from 'react'
-
 function UseMemoandTransation() {
     const [value, setValue] = useState("");
     const [list, setList] = useState([]);
@@ -15,7 +14,7 @@ function UseMemoandTransation() {
     },[value])
   return (
     <div>
-      <input 
+      <input
       type="text" 
       value={value} 
       onChange={(e)=> setValue(e.target.value)}
