@@ -11,6 +11,7 @@ import FirstUseMemo from "./components/FirstUseMemo";
 import SecondUseMemo from "./components/SecondUseMemo";
 import ThirdUseMemo from "./components/ThirdUseMemo";
 import FourthUseMemo from "./components/FourthUseMemo";
+import UseActionState from "./components/UseActionState";
 
 export default function App(){
   const [showForm, setShowForm] = useState(false);
@@ -28,7 +29,8 @@ export default function App(){
             {/* <FirstUseMemo/> */}
             {/* <SecondUseMemo/> */}
             {/* <ThirdUseMemo/> */}
-            <FourthUseMemo/>
+            {/* <FourthUseMemo/> */}
+            <UseActionState/>
     </div>
   )
 }
